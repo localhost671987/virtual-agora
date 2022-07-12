@@ -20,4 +20,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('virtual_agora.urls', namespace='virtual_agora')),
     path('api/', include('virtual_agora_api.urls', namespace='virtual_agora_api')),
+    path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),
 ]
