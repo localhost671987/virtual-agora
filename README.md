@@ -19,5 +19,7 @@ python manage.py runserver
 
 # Frontend
 cd ../Frontend
+
 npm i
+
 npm start
