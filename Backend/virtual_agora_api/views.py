@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from rest_framework import generics
-from virtual_agora.models import Post
+from virtual_agora.models import Post, Comment, Theme
 from .serializers import PostSerializer
 from rest_framework.permissions import SAFE_METHODS, BasePermission, IsAdminUser, DjangoModelPermissionsOrAnonReadOnly, IsAuthenticatedOrReadOnly
 
@@ -26,3 +26,5 @@ class PostDetail(generics.RetrieveUpdateDestroyAPIView, PostUserWritePermission)
     permission_classes = [PostUserWritePermission]
     queryset = Post.objects.all()
     serializer_class = PostSerializer
+
+   
