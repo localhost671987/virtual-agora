@@ -3,6 +3,7 @@
 
 ## Run the following code
 python -m venv venv
+
 venv/Scipts/activate.bat
 
 format.bat
