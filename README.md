@@ -8,19 +8,19 @@ cd Backend
 ### create virtual environment
 python -m venv venv
 
-###activate virtual environment 
+### activate virtual environment 
 venv/Scipts/activate.bat
 
-## requirements and migrations
+### requirements and migrations
 format.bat
 
-## create superuser
+### create superuser
 python manage.py createsuperuser
 
-## run the server
+### run the server
 python manage.py runserver
 
-# Frontend
+## Frontend
 cd ../Frontend
 
 npm i
