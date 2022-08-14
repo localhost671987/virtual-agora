@@ -1,19 +1,23 @@
 # virtual-agora
-##Backend Instructions
 
-## Run the following code
+## Backend Instructions
+
+### create virtual environment
 python -m venv venv
 
+###activate virtual environment 
 venv/Scipts/activate.bat
 
+## requirements and migrations
 format.bat
 
 ## create superuser
 python manage.py createsuperuser
 
+## run the server
 python manage.py runserver
 
-#Frontend
+# Frontend
 cd ../Frontend
 npm i
 npm start
